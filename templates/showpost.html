@@ -1,4 +1,7 @@
-<a href="/">返回首頁</a><br>
+{% extends "base.html" %}
+{% block title %}消息內容頁面{% endblock %}
+{% block headmessage %} <h1>顯示消息內容</h1> {% endblock %}
+{% block content %}
 <table width=800 border=1>
 <tr>
 	<td>標題</td>
@@ -13,3 +16,4 @@
 	<td>{{target.body}}</td>
 </tr>
 </table>
+{% endblock %}

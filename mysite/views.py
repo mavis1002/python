@@ -1,3 +1,4 @@
+from django.shortcuts import redirect
 from django.shortcuts import render
 from django.http import HttpResponse
 import random
@@ -16,5 +17,5 @@ def show(request, id):
 	try:
 		target = Post.objects.get(id=id)
 	except:
-		target = None
+		return redirect("/")
 	return render(request, "showpost.html", locals())
