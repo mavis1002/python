@@ -7,7 +7,7 @@ from mysite.models import Post, Country, City
 
 def index(request):
 	posts = Post.objects.all()
-	myname = "何敏煌"
+	myname = "童沛瀠"
 	data = [i for i in range(1, 43)]
 	random.shuffle(data)
 	lotto_numbers = data[0:6]
