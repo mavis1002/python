@@ -1,1 +1,1 @@
-web: gunicorn datacenter.wsgi
+web: gunicorn mavis1002.wsgi
